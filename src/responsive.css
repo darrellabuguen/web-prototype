@@ -1,0 +1,468 @@
+@media screen and (min-width: 0px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .mb-menu-container {
+        display: block;
+        margin-left: auto;
+    }
+
+    .web-menu {
+        display: none;
+    }
+
+    header nav ul li a.logo img {
+        width: 120px;
+    }
+
+    header nav ul {
+        padding-top: 0rem;
+        padding: 1rem;
+    }
+
+    .book-appointment .book-appointment-btn p {
+        display: none;
+    }
+
+    header div.intro::before {
+        font-size: 3rem;
+    }
+
+    .book-appointment-container .search {
+        margin-left: 0%;
+        width: 80%;
+    }
+
+    .mb-menu {
+        overflow: scroll;
+        width: 70svw;
+    }
+
+    .contact-form {
+        flex-direction: column-reverse;
+        width: 100%;
+        top: 86%;
+        left: 50%;
+        transform: translate(-86%, -50%);
+    }
+
+    .contacts {
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .submit-message {
+        width: 100%;
+        background-color: white;
+        padding: 1rem;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding: 1rem;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+
+    .virtual .content,
+    .photography .content,
+    .syndication .content,
+    .responsive .content {
+        left: 1rem;
+        bottom: 1rem;
+    }
+
+    .buy-process,
+    .sell-process {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-wrapper,
+    .d-card-container,
+    .drone-shot-part,
+    .partners-logo,
+    .partners-container,
+    .exposure-type,
+    .tablet-info-wrapper,
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    .first {
+        flex-direction: column;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+
+    .achv-rev {
+        flex-direction: column-reverse;
+    }
+
+    .achv-same {
+        flex-direction: column;
+    }
+
+    .d-card-container {
+        padding: 0;
+    }
+
+    .heading-only-text {
+        font-size: 1.5rem;
+        margin: 1rem 0rem;
+    }
+
+    .leading-logo,
+    .partners-container img,
+    .achv img,
+    .guide-containers img {
+        width: 100%;
+    }
+
+    .d-card,
+    .drone-shot-part,
+    .partners,
+    .marketing-container,
+    .tablet-info-wrapper,
+    .guide-achv,
+    .sell-process,
+    .buy-process,
+    .guide-info {
+        max-width: 90%;
+    }
+
+    .guide-containers ul li {
+        margin-left: 1rem;
+    }
+
+    .tablet-info-wrapper,
+    .g-texts {
+        text-align: justify;
+    }
+
+    .realtor-img {
+        width: 60%;
+    }
+
+    .partners-logo {
+        gap: 3rem;
+    }
+
+    .drone-shot-part p {
+        text-align: justify;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .d-card img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .logos {
+        gap: 2rem;
+    }
+
+    .last-footer {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    header nav ul li a.logo img {
+        width: 15rem;
+    }
+
+    header nav ul {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+
+    header div.intro::before {
+        font-size: 5rem;
+    }
+
+    .book-appointment-container .search {
+        margin-left: 14%;
+        width: 40%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contacts,
+    .submit-message {
+        padding: 2rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding: 9rem;
+    }
+
+    .virtual .content,
+    .photography .content,
+    .syndication .content,
+    .responsive .content {
+        left: 2rem;
+        bottom: 2rem;
+    }
+
+    .mb-menu {
+        width: 50svw;
+    }
+
+    .buy-process,
+    .sell-process,
+    .guide-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partners-logo {
+        width: 40%;
+        margin: auto;
+    }
+
+    .tablet {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .book-appointment .book-appointment-btn p {
+        display: block;
+    }
+
+    @keyframes goRight {
+        from {
+            transform: translateX(-3rem);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0rem);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .mb-menu {
+        overflow: hidden;
+        width: 40svw;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding: 9rem;
+    }
+
+    .contacts,
+    .submit-message {
+        padding: 2rem;
+    }
+
+    .virtual .content,
+    .photography .content,
+    .syndication .content,
+    .responsive .content {
+        left: 3rem;
+        bottom: 3rem;
+    }
+
+    .partners-logo,
+    .achv-same,
+    .achv-rev,
+    .second,
+    .first,
+    .footer-wrapper,
+    .d-card-container,
+    .drone-shot-part,
+    .partners-container,
+    .exposure-type,
+    .benefits-container {
+        flex-direction: row;
+    }
+
+    .partners-logo,
+    .partners-container img,
+    .achv img,
+    .guide-containers img {
+        width: 50%;
+    }
+
+    .d-card {
+        padding-right: 2rem;
+        width: 50%;
+    }
+
+    .d-card img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .d-card .flag {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .guide-info {
+        width: 80%;
+    }
+
+    .guide-containers ul li {
+        margin-left: 2rem;
+        padding: .2rem;
+    }
+
+    .partners-logo {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .partners-logo img {
+        width: 35%;
+    }
+
+    .partners-logo .leading-logo {
+        width: 27.5%;
+    }
+
+    .drone-shot-part {
+        gap: 1rem;
+    }
+
+    .tablet {
+        width: 100%;
+        margin: 0;
+    }
+
+    .realtor-img {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1054px) {
+    .mb-menu-container {
+        display: none;
+    }
+
+    .web-menu {
+        display: block;
+    }
+
+    .contact-form {
+        width: 80svw;
+        flex-direction: row;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    .card h2 {
+        font-size: 1.75rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+
+    .virtual .content,
+    .photography .content,
+    .syndication .content,
+    .responsive .content {
+        left: 4rem;
+        bottom: 4rem;
+    }
+
+    .guide-containers ul li {
+        padding: 1rem;
+    }
+
+    .d-card {
+        padding-right: 3rem;
+        width: 50%;
+    }
+
+    .d-card img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .d-card .flag {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .tablet-info-wrapper {
+        flex-direction: row;
+    }
+
+    .drone-shot-part p {
+        text-align: center;
+    }
+
+    .heading-only-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-form {
+        width: 60svw;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .virtual .content,
+    .photography .content,
+    .syndication .content,
+    .responsive .content {
+        left: 5rem;
+        bottom: 5rem;
+    }
+
+
+    .tablet {
+        width: 50%;
+    }
+}

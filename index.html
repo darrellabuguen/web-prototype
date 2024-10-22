@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsive.css">
+    <title>Services | Pleasanton Real Estate | Julie Hanse Partnership</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="logo"><img src="src/images/logos/jhsereno-light-logo.png"
+                            alt="img"></a></li>
+                <li class="web-menu"><a href="index.html">HOME</a></li>
+                <li class="web-menu"><a
+                        href="https://hansenpartners.net/home-search/listings?sortBy=LP_LISTING_ON_MARKET_TIMESTAMP&sortDirection=DESC&listingStatus=%5B%22ACTIVE%22%2C%22COMING_SOON%22%5D&center=%7B%22lat%22%3A37.695118812286985%2C%22lng%22%3A-121.90293729999999%7D&zoom=11&boundary=%5B%5B%5B37.917005856434315%2C-122.29707182148437%5D%2C%5B37.917005856434315%2C-121.50880277851562%5D%2C%5B37.472565755713205%2C-121.50880277851562%5D%2C%5B37.472565755713205%2C-122.29707182148437%5D%2C%5B37.917005856434315%2C-122.29707182148437%5D%5D%5D&omnibox=&keyword=&page=1&limit=48&isLease=false&cityName=&stateName=">SEARCH
+                        FOR HOMES</a></li>
+                <li class="web-menu"><a onclick="changeContactState()">CONTACT US</a></li>
+                <li class="dropdown web-menu">
+                    <a href="#">DISCOVER
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <ul class="dropdown-items">
+                        <li><a href="https://hansenpartners.net/team">MEET THE TEAM</a></li>
+                        <li><a href="https://hansenpartners.net/neighborhoods">OUR COMMUNITIES</a></li>
+                        <li><a href="https://hansenpartners.net/home-valuation">HOME VALUATION</a></li>
+                        <li><a href="index.html">SERVICES</a></li>
+                        <li><a href="https://hansenpartners.net/FeaturedListingHOA">HOME ACROSS AMERICA</a></li>
+                        <li><a href="https://hansenpartners.net/testimonials">TESTIMONIALS</a></li>
+                    </ul>
+                </li>
+                <li class="web-menu" style="margin-left: auto;">
+                    <div href="#" class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </li>
+                <li class="mb-menu-container" onclick="showMenu()">
+                    <div class="mb-menu-btn">
+                        <div class="bars-container">
+                            <div class="bar1 bar"></div>
+                            <div class="bar2 bar">
+                                <div class="bar4 bar"></div>
+                            </div>
+                            <div class="bar3 bar"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <img src="./src/images/header-img.jfif" alt="img">
+        </div>
+    </header>
+    <div class="mb-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a
+                    href="https://hansenpartners.net/home-search/listings?sortBy=LP_LISTING_ON_MARKET_TIMESTAMP&sortDirection=DESC&listingStatus=%5B%22ACTIVE%22%2C%22COMING_SOON%22%5D&center=%7B%22lat%22%3A37.695118812286985%2C%22lng%22%3A-121.90293729999999%7D&zoom=11&boundary=%5B%5B%5B37.917005856434315%2C-122.29707182148437%5D%2C%5B37.917005856434315%2C-121.50880277851562%5D%2C%5B37.472565755713205%2C-121.50880277851562%5D%2C%5B37.472565755713205%2C-122.29707182148437%5D%2C%5B37.917005856434315%2C-122.29707182148437%5D%5D%5D&omnibox=&keyword=&page=1&limit=48&isLease=false&cityName=&stateName=">SEARCH
+                    FOR HOMES</a></li>
+            <li><a onclick="changeContactState()" style="cursor: pointer;">CONTACT US</a></li>
+            <li class="mb-dropdown" onclick="showSubMenu()">
+                <div>
+                    DISCOVER <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <ul class="mb-dropdown-items closed">
+                    <li><a href="https://hansenpartners.net/team">MEET THE TEAM</a></li>
+                    <li><a href="https://hansenpartners.net/neighborhoods">OUR COMMUNITIES</a></li>
+                    <li><a href="https://hansenpartners.net/home-valuation">HOME VALUATION</a></li>
+                    <li><a href="index.html">SERVICES</a></li>
+                    <li><a href="https://hansenpartners.net/FeaturedListingHOA">HOME ACROSS AMERICA</a></li>
+                    <li><a href="https://hansenpartners.net/testimonials">TESTIMONIALS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="book-appointment-container">
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15px" height="15px">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                    fill="white" />
+            </svg>
+            <input type="text" placeholder="Search by Address or Area">
+        </div>
+        <div class="book-appointment" onclick="changeContactState()">
+            <div class="book-appointment-btn">
+                <p>BOOK AN APPOINTMENT</p> <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <main>
+        <h1 align="center" class="heading">Comprehensive Marketing Plan</h1>
+        <div>
+            <div class="responsive card animate">
+                <div class="content">
+                    <h2>Responsive</h2>
+                    <p>I am always available via phone, text, or email.</p>
+                </div>
+            </div>
+            <div class="syndication card">
+                <div class="content">
+                    <h2>Syndication</h2>
+                    <p>I market your property locally, nationally, and internationally</p>
+                </div>
+            </div>
+            <div class="photography card">
+                <div class="content">
+                    <h2>Photography</h2>
+                    <p>Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
+                </div>
+            </div>
+            <div class="virtual card">
+                <div class="content">
+                    <h2>Virtual Tour</h2>
+                    <p>Let's make your home stand out with a high quality virtual tour.</p>
+                </div>
+            </div>
+        </div>
+        <div class="guide-info">
+            <div class="guide-containers first">
+                <div class="g-texts heading-only-text">
+                    Decor Guidance
+                </div>
+                <img src="./src/images/Decor-guidance.png" alt="img">
+            </div>
+            <div class="guide-containers second">
+                <img src="./src/images/books.png" alt="img">
+                <div class="g-texts">
+                    <div>
+                        <h1 class="heading-only-text">My Staging Expertise</h1>
+                        <ul>
+                            <li>Unclutter and organize your home</li>
+                            <li>Neatly arrange drawers and cabinets</li>
+                            <li>Keep pets outdoors or off the premises</li>
+                            <li>Play soft music</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="guide-containers first">
+                <div class="g-texts heading-only-text">
+                    Intentional Layout
+                </div>
+                <img src="./src/images/clock.png" alt="img">
+            </div>
+            <div class="guide-containers first">
+                <img src="./src/images/painting.png" alt="img">
+                <div class="g-texts">
+                    <div>
+                        <ul>
+                            <li>Unclutter and organize your home</li>
+                            <li>Neatly arrange drawers and cabinets</li>
+                            <li>Keep pets outdoors or off the premises</li>
+                            <li>Play soft music</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 align="center" class="heading">The Selling Process</h1>
+        <div class="sell-process">
+            <div class="consulting">
+                <span>
+                    <h1>1</h1>
+                    <p>Initial Consultation & Planning</p>
+                </span>
+            </div>
+            <div class="planning">
+                <span>
+                    <h1>2</h1>
+                    <p>Devise & Execute Marketing Plan</p>
+                </span>
+            </div>
+            <div class="agreement">
+                <span>
+                    <h1>3</h1>
+                    <p>Review Offers & Reach Agreement with Buyer</p>
+                </span>
+            </div>
+            <div class="signing">
+                <span>
+                    <h1>4</h1>
+                    <p>Complete Transaction Process</p>
+                </span>
+            </div>
+            <div class="service">
+                <span>
+                    <h1>5</h1>
+                    <p>After - Sale Service</p>
+                </span>
+            </div>
+        </div>
+        <h1 align="center" class="heading">The Buying Process</h1>
+        <div class="buy-process">
+            <div class="consulting">
+                <span>
+                    <h1>1</h1>
+                    <p>Initial Consultation & Planning</p>
+                </span>
+            </div>
+            <div class="searching">
+                <span>
+                    <h1>2</h1>
+                    <p>Search for a Home & Get Pre-Approved</p>
+                </span>
+            </div>
+            <div class="offer">
+                <span>
+                    <h1>3</h1>
+                    <p>Submit an Offer</p>
+                </span>
+            </div>
+            <div class="complete">
+                <span>
+                    <h1>4</h1>
+                    <p>Complete Settlement Process</p>
+                </span>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="guide-achv">
+            <div class="achv-rev achv">
+                <div class="g-texts">
+                    <div>
+                        <h1 class="heading-only-text">Over 33 Years of Real Estate Success</h1>
+                        <p>
+                            We provide every one of our clients with a level of service they won’t find anywhere else.
+                            We
+                            give them what they need, often before they know they need it. ​​​​​​​In real estate, almost
+                            everything can be negotiated. When you choose Hansen Partners It is experience is 100%
+                            nonnegotiable. ​​​​​​​ ​​​​​​​And it’s an experience like no other.
+                        </p>
+                    </div>
+                </div>
+                <img src="./src/images/standing.png" alt="img">
+            </div>
+            <div class="achv-same achv">
+                <img src="./src/images/presenting.png" alt="img">
+                <div class="g-texts">
+                    <div>
+                        <h1 class="heading-only-text">We Want To Create An Unforgettable Experience For You...</h1>
+                        <p>
+                            We combine data gained from your home’s Comparative Market Analysis with local market
+                            research
+                            to create a marketing plan designed to help you meet your selling goals. Your home’s
+                            carefully
+                            designed plan will include a range of online, print, and other marketing tools targeted to
+                            the
+                            best-qualified pool of buyers. ​​​​​​​ Successfully marketing a home in today’s real estate
+                            environment requires a firm with experience and flexibility. Hansen Partners provides both.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <h1 align="center" class="heading-only-text">The Hansen Partners Communications Tablet</h1>
+        <br>
+        <div class="tablet-info-wrapper">
+            <div>
+                <img src="./src/images/using-tab.png" alt="img">
+                <p>
+                    We have created this as a wonderful tool so that we can communicate with you daily, provide you with
+                    updates on what is happening with your home. We are available at the with a click of your tablet.
+                </p>
+                <br>
+                <p>
+                    We believe that transparency and guiding you and your family through the process is key to having
+                    the
+                    best experience. During these uncertain times. It is a good feeling to know you have some one with a
+                    proven track record you can count on. We will be here to handle your needs during the Real Estate
+                    process. We think of it before a need even arises. Because, that is just what we do. Who you work
+                    with
+                    does matter!
+                </p>
+            </div>
+            <div>
+                <div>
+                    <h1>Benefits</h1>
+                    <div class="benefits-container">
+                        <div class="img-container"><img src="./src/images/logos/offer.png" alt="img"></div>
+                        <p>Review all documents and sign in the comfort of your home or anywhere.</p>
+                    </div>
+                    <div class="benefits-container">
+                        <div class="img-container"><img src="./src/images/logos/planning.png" alt="img"></div>
+                        <p>Stay up to date on all marketing activities, review materials, photos, etc. in real time.</p>
+                    </div>
+                    <div class="benefits-container">
+                        <div class="img-container"><img src="./src/images/logos/gotomeeting.png" alt="img"></div>
+                        <p>Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events
+                            of the week.</p>
+                    </div>
+                    <div class="benefits-container">
+                        <div class="img-container"><img src="./src/images/logos/send-email.png" alt="img"></div>
+                        <p>You have your own email assigned just for you and your common space to quickly write a note,
+                            or quickly send a video message to us for fast communication using our Bomb bomb video
+                            messaging system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="marketing-container">
+            <div align="center">
+                <h1 class="heading-only-text">We Market Your Home to The World</h1>
+                <br>
+                <h2>Our Online Marketing Strategy</h2>
+                <br>
+                <p>The Bay Area remains one of the world's most sought-after regions to live in, and when looking to
+                    sell,
+                    it is vital that your home be marketed online to audiences locally, nationally, and internationally.
+                </p>
+            </div>
+            <br>
+            <div class="exposure-type">
+                <div class="type-container">
+                    <img src="./src/images/logos/local.png" alt="img">
+                    <h2>Local Exposure</h2>
+                    <p>
+                        Through our partnership with Nextdoor, the private online social network now used in over 80% of
+                        U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives
+                        targeted local exposure. When you list your home with Hansen Partners it will automatically
+                        appear on Nextdoor in your neighborhood.
+                    </p>
+                </div>
+                <div class="type-container">
+                    <img src="./src/images/logos/national.png" alt="img">
+                    <h2>National Exposure</h2>
+                    <p>
+                        We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more
+                        consumers to your home and increasing exposure. We will receive every inquiry about your
+                        property directly.
+                    </p>
+                </div>
+                <div class="type-container">
+                    <img src="./src/images/logos/international.png" alt="img">
+                    <h2>International Exposure</h2>
+                    <p>
+                        To expose your luxury listing to millions of potential homebuyers worldwide, we promote on
+                        prominent international real estate portals, including: Wall Street Journal,
+                        LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com,
+                        China.apr.com, Caimeiju, Juwai, Country Life UK
+                    </p>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div align="center"><img src="./src/images/realtor-etc.png" alt="img" class="realtor-img"></div>
+        </div>
+        <div class="spacer"></div>
+        <div class="partners">
+            <div class="partners-container second">
+                <div style="text-align: center;">
+                    <div class="partners-logo">
+                        <img src="./src/images/logos/leading-real-estate-logo.png" alt="img" class="leading-logo">
+                        <img src="./src/images/logos/luxury-portfolio-logo.png" alt="img">
+                        <img src="./src/images/logos/luxury-real-estate-logo.png" alt="img">
+                    </div>
+                    <br>
+                    <div>
+                        <p>Leading Real Estate Companies of The World® & Luxury Portfolio International</p>
+                        <br>
+                        <p>
+                            JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of
+                            Leading Real Estate Companies of the World®. With more than 500 member firms around the
+                            world, Our luxury listings are exposed to a vast global audience and reach potential buyers
+                            and investors in over 50 countries.
+                        </p>
+                        <br>
+                        <p>Who's Who in Luxury Real Estate</p>
+                        <br>
+                        <p>Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</p>
+                    </div>
+                </div>
+                <img src="./src/images/luxury-balcony.png" alt="img">
+            </div>
+            <div class="partners-container">
+                <img src="./src/images/great-wall.png" alt="img">
+                <div style="text-align: left; font-family: sans-serif;">
+                    <p>
+                        Through our international affiliations, we have a strong presence in over 50 countries. Our
+                        luxury listings are sent to prominent international real estate sites, reaching over 70 million
+                        potential buyers and investors worldwide through our relationships with:
+                    </p>
+                    <br>
+                    <div class="partners-logo">
+                        <img src="./src/images/logos/leading-real-estate-logo.png" alt="img" class="leading-logo">
+                        <img src="./src/images/logos/luxury-portfolio-logo.png" alt="img">
+                        <img src="./src/images/logos/luxury-real-estate-logo.png" alt="img">
+                    </div>
+                    <br>
+                    <p>
+                        We also have several well-positioned affiliate offices in China, providing our clients with
+                        access to buyers in Hong Kong, Shanghai, and Beijing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="drone-shot-part second">
+            <div>
+                <p>
+                    Through our international affiliations, we have a strong presence in over 50 countries. Our
+                    luxury listings are sent to prominent international real estate sites, reaching over 70 million
+                    potential buyers and investors worldwide through our relationships with:
+                </p>
+                <div class="d-card-container">
+                    <div class="d-card">
+                        <img src="./src/images/logos/email.png" alt="img">
+                        <div class="d-content">
+                            <h2>Responsive</h2>
+                            <p>
+                                I am always available via phone, text, or email to answer your questions in a timely
+                                manner.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-card">
+                        <img src="./src/images/logos/flag.png" alt="img" class="flag">
+                        <div class="d-content">
+                            <h2>Syndication</h2>
+                            <p>
+                                I market your property locally, nationally, and internationally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-card-container">
+                    <div class="d-card">
+                        <img src="./src/images/logos/map.png" alt="img">
+                        <div class="d-content">
+                            <h2>Virtual Tour</h2>
+                            <p>
+                                Let’s make your home stand out with a high quality virtual tour.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-card">
+                        <img src="./src/images/logos/drone.png" alt="img">
+                        <div class="d-content">
+                            <h2>Drone Photography</h2>
+                            <p>
+                                Beautiful photography is a central part of our marketing plan for your property.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet">
+                <img src="./src/images/tab-drone-shot.png" alt="img">
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="work-with-us" align="center">
+            <div>
+                <h2 class="heading-only-text">Work With Us</h2>
+                <div class="spacer"></div>
+                <p>
+                    With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your
+                    dreams are a reality. Let us guide you through your home buying journey, contact us today!
+                </p>
+                <div class="spacer"></div>
+                <button onclick="changeContactState()">CONTACT US</button>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="first-footer">
+                <div>
+                    <div class="heading-only-text">Julie Hansen Partnership</div>
+                    <p>
+                        An elite group of the East Bay’s most talented and visionary real estate professionals
+                        believed
+                        buyers and sellers deserved more from their real estate company. More service. More
+                        resources.
+                        More
+                        integrity. More global reach. In a word, more of everything people should expect when they
+                        buy
+                        or
+                        sell their homes.
+                    </p>
+                </div>
+                <div class="spacer"></div>
+                <div>
+                    <div style="font-size: large; font-weight: bold; font-family: sans-serif;">ADDRESS</div>
+                    <br>
+                    <p>
+                        4733 Chabot Drive #100 <br>
+                        Pleasanton, CA 94588 <br>
+                        ​Julie Hansen-Orvis | CA DRE# 00934447
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <div style="font-size: large; font-weight: bold; font-family: sans-serif;">CONTACT INFORMATION
+                    </div>
+                    <br>
+                    <a href="tel:(925) 553-6707" style="font-family: sans-serif;">(925) 553-6707</a>
+                    <br>
+                    <a href="mailto:luxuryhomesinwc@icloud.com"
+                        style="font-family: sans-serif;">luxuryhomesinwc@icloud.com</a>
+                </div>
+                <div class="spacer"></div>
+                <div class="soc-links">
+                    <a href="https://www.facebook.com/juliehansenpartership">
+                        <img src="./src/images/logos/facebook.svg" alt="img">
+                    </a>
+                    <a href="https://www.linkedin.com/in/julie-hansen-orvis-10b99359/">
+                        <img src="./src/images/logos/linkedin.svg" alt="img">
+                    </a>
+                </div>
+            </div>
+            <div class="second-footer">
+                <div class="heading-only-text">Newsletter</div>
+                <p>Subscribe to our Newsletter for latest news and updates. Stay tuned! </p>
+                <input type="email" placeholder="Email Address" class="c-input" required>
+                <div class="disclaimer">
+                    <div>
+                        <input type="checkbox" name="disclaimer">
+                    </div>
+                    <div>
+                        By providing Julie Hansen Partnership your contact information, you acknowledge and agree to
+                        our Privacy Policy and consent to receiving marketing communications, including through
+                        automated calls, texts, and emails, some of which may use artificial or prerecorded voices.
+                        This
+                        consent isn’t necessary for purchasing any products or services and you may opt out at any
+                        time.
+                        To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can
+                        click
+                        on the unsubscribe link in the emails. Message and data rates may apply.
+                    </div>
+                </div>
+                <input type="submit" value="SUBSCRIBE">
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="logos">
+            <img src="./src/images/logos/realtor-logo.png" alt="img">
+            <img src="./src/images/logos/equal-housing-logo.png" alt="img">
+            <img src="./src/images/logos/sereno-logo.png" alt="img">
+        </div>
+        <br>
+        <div class="last-footer">
+            <div class="l-f-container">
+                <div style="text-align: center; font-size: 1.2rem; color: white;">
+                    <p>Website Designed & Developed by Luxury Presence</p>
+                    <br>
+                    <p>Copyright 2024 | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-container">
+        <div class="contact-form">
+            <div class="close-contact" onclick="changeContactState()">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </div>
+            <div class="contacts c-item">
+                <div class="c-parts">
+                    <img src="./src/images/logos/contact.svg" alt="contact" class="contact-icons">
+                    <a href="tel:(925) 553-6707" style="color: white;">(925) 553-6707</a>
+                </div>
+                <div class="c-parts">
+                    <img src="./src/images/logos/mail.svg" alt="contact" class="contact-icons">
+                    <a href="mailto:luxuryhomesinwc@icloud.com" style="color: white;">luxuryhomesinwc@icloud.com</a>
+                </div>
+                <div class="c-parts">
+                    <img src="./src/images/logos/map-pin.svg" alt="contact" class="contact-icons">
+                    <a href="https://maps.app.goo.gl/QkfjZY6BodvLn3Fd7" style="color: white;">4337 Chabot Drive,
+                        Pleasanton, CA 94588Julie Hansen-Orvis | CA DRE# 00934447</a>
+                </div>
+            </div>
+            <div class="submit-message c-item">
+                <h1 class="heading-only-text" align="center">Submit A Message</h1>
+                <input type="text" placeholder="Name" class="c-input">
+                <input type="text" placeholder="Phone" class="c-input">
+                <input type="email" placeholder="Email" class="c-input">
+                <input type="text" placeholder="Message" class="c-input">
+                <div class="disclaimer">
+                    <div>
+                        <input type="checkbox" name="disclaimer">
+                    </div>
+                    <div>
+                        By providing Julie Hansen Partnership your contact information, you acknowledge and agree to
+                        our Privacy Policy and consent to receiving marketing communications, including through
+                        automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This
+                        consent isn’t necessary for purchasing any products or services and you may opt out at any time.
+                        To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click
+                        on the unsubscribe link in the emails. Message and data rates may apply.
+                    </div>
+                </div>
+                <div align="center">
+                    <button class="c-send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
